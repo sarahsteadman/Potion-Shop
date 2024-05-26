@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Healing Elixir",
+        "properties": "Restores health and vitality",
+        "cost": 10,
+        "price": 50,
+        "quantity": 20,
+        "supplier": "Mystic Remedies Co."
+    },
+    {
+        "name": "Invisibility Potion",
+        "properties": "Grants temporary invisibility",
+        "cost": 25,
+        "price": 100,
+        "quantity": 15,
+        "supplier": "Shadow Suppliers"
+    },
+    {
+        "name": "Strength Draught",
+        "properties": "Increases physical strength",
+        "cost": 15,
+        "price": 70,
+        "quantity": 25,
+        "supplier": "Giant's Brew Ltd."
+    },
+    {
+        "name": "Mana Potion",
+        "properties": "Replenishes magical energy",
+        "cost": 8,
+        "price": 40,
+        "quantity": 30,
+        "supplier": "Arcane Elixirs"
+    },
+    {
+        "name": "Love Potion",
+        "properties": "Induces feelings of love and affection",
+        "cost": 20,
+        "price": 90,
+        "quantity": 10,
+        "supplier": "Enchanted Emotions Inc."
+    }
+]
