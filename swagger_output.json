@@ -5,13 +5,13 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "potion-shop-u0ml.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
-    "/": {
+    "/potions": {
       "get": {
         "description": "",
         "produces": [
@@ -64,7 +64,7 @@
         }
       }
     },
-    "/{id}": {
+    "/{potionsid}": {
       "get": {
         "description": "",
         "produces": [
@@ -72,7 +72,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "potionsid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -88,7 +88,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "potionsid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -134,7 +134,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "potionsid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -146,6 +146,16 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
