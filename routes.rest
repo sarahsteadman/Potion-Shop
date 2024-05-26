@@ -50,3 +50,50 @@ DELETE http://localhost:9000/6652a1786c15de5250aad5f5
 
 // RENDER
 // All Results
+###
+GET https://potion-shop-u0ml.onrender.com/
+//Get by ID
+###
+GET https://potion-shop-u0ml.onrender.com/664ebb5f2b9a303f6df431af
+
+###
+POST https://potion-shop-u0ml.onrender.com/
+Content-Type: application/json
+
+{
+    "name": "Phoenix Feather Cloak",
+    "properties": "Grants the wearer the ability to fly and provides resistance to fire damage",
+    "cost": 200,
+    "price": 800,
+    "quantity": 5,
+    "supplier": "Eternal Flame Emporium"
+}
+###
+PUT https://potion-shop-u0ml.onrender.com/664ebb5f2b9a303f6df431b0
+Content-Type: application/json
+
+  {
+    "_id": "664ebb5f2b9a303f6df431b0",
+    "name": "Invisibility Potion",
+    "properties": "Grants temporary invisibility",
+    "cost": 25,
+    "price": 100,
+    "quantity": 14,
+    "supplier": "Shadow Suppliers"
+  }
+###
+PUT https://potion-shop-u0ml.onrender.com/664ebb5f2b9a303f6df431b0
+Content-Type: application/json
+
+  {
+    "_id": "664ebb5f2b9a303f6df431b0",
+    "name": "Invisibility Potion",
+    "properties": "Grants temporary invisibility",
+    "cost": 5,
+    "price": 50,
+    "quantity": 4,
+    "supplier": "Shadow Suppliers"
+  }
+###
+DELETE https://potion-shop-u0ml.onrender.com/6652a1786c15de5250aad5f5
+###
