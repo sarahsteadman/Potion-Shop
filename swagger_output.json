@@ -13,7 +13,7 @@
   "paths": {
     "/potions": {
       "get": {
-        "description": "",
+        "description": "View all potions",
         "produces": [
           "application/json"
         ],
@@ -24,7 +24,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add New Potion",
         "parameters": [
           {
             "name": "body",
@@ -64,9 +64,9 @@
         }
       }
     },
-    "/{potionsid}": {
+    "/potions{potionsid}": {
       "get": {
-        "description": "",
+        "description": "View one potion's information",
         "produces": [
           "application/json"
         ],
@@ -85,7 +85,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update a potion",
         "parameters": [
           {
             "name": "potionsid",
@@ -131,7 +131,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a potion",
         "parameters": [
           {
             "name": "potionsid",
@@ -152,7 +152,7 @@
     },
     "/api-docs": {
       "get": {
-        "description": "",
+        "description": "Swagger Document",
         "responses": {
           "default": {
             "description": ""
