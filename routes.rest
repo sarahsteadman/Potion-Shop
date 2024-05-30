@@ -45,7 +45,7 @@ Content-Type: application/json
     "supplier": "Shadow Suppliers"
   }
 ###
-DELETE http://localhost:9000/potions6652a1786c15de5250aad5f5
+DELETE http://localhost:9000/potions6657ed8e865fb8699de9dceb
 ###
 
 // RENDER
