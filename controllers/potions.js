@@ -22,6 +22,11 @@ const getAll = async (req, res, next) => {
 };
 
 const getSingle = async (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
     try {
         const idString = String(req.params.id);
         const potionId = new ObjectId(idString);
@@ -32,7 +37,7 @@ const getSingle = async (req, res, next) => {
             res.status(200).json(lists);
         });
     }
-    catch {
+    catch (error) {
         res.status(500).json({ error: 'Failed to fetch potion' });
     }
 };
@@ -100,6 +105,11 @@ const update = async (req, res, next) => {
 };
 
 const del = async (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
     try {
         const idString = String(req.params.id);
         const potionId = new ObjectId(idString);

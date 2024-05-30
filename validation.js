@@ -1,4 +1,4 @@
-const { body } = require('express-validator');
+const { body, param } = require('express-validator');
 
 const potionValidationRules = () => {
     return [
@@ -13,11 +13,11 @@ const potionValidationRules = () => {
             .isLength({ min: 1, max: 255 }).withMessage('Properties must be between 1 and 255 characters'),
 
         body('cost')
-            .isFloat({ gt: -1 }).withMessage('Cost must be a number greater than or equal to 0')
+            .isFloat({ gt: 0 }).withMessage('Cost must be a number greater than 0')
             .notEmpty().withMessage('Cost is required'),
 
         body('price')
-            .isFloat({ gt: -1 }).withMessage('Price must be a number greater than or equal to 0')
+            .isFloat({ gt: 0 }).withMessage('Price must be a number greater than 0')
             .notEmpty().withMessage('Price is required'),
 
         body('quantity')
@@ -31,6 +31,14 @@ const potionValidationRules = () => {
     ];
 };
 
+const idValidationRule = () => {
+    return [
+        param('id')
+            .isMongoId().withMessage('Invalid ID format')
+    ];
+};
+
 module.exports = {
-    potionValidationRules
+    potionValidationRules,
+    idValidationRule
 };

@@ -9,9 +9,9 @@ const validations = require('../validation');
 router.get('/potions', potionsController.getAll);
 router.post('/potions', validations.potionValidationRules(), potionsController.create);
 
-router.get('/potions:id', potionsController.getSingle);
+router.get('/potions:id', validations.idValidationRule(), potionsController.getSingle);
 router.put('/potions:id', validations.potionValidationRules(), potionsController.update);
-router.delete('/potions:id', potionsController.del);
+router.delete('/potions:id', validations.idValidationRule(), potionsController.del);
 
 router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
