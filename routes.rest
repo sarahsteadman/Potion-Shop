@@ -19,6 +19,18 @@ Content-Type: application/json
     "supplier": "Eternal Flame Emporium"
 }
 ###
+POST http://localhost:9000/potions
+Content-Type: application/json
+
+{
+    "name": "",
+    "properties": "",
+    "cost": "200",
+    "price": "a",
+    "quantity": 5,
+    "supplier": "Eternal Flame Emporium"
+}
+###
 PUT http://localhost:9000/potions664ebb5f2b9a303f6df431b0
 Content-Type: application/json
 
@@ -45,7 +57,7 @@ Content-Type: application/json
     "supplier": "Shadow Suppliers"
   }
 ###
-DELETE http://localhost:9000/potions6657ed8e865fb8699de9dceb
+DELETE http://localhost:9000/potions6652b284b8ebda65eae57380
 ###
 
 // RENDER
