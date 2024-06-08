@@ -1,0 +1,116 @@
+[
+    {
+        "name": "Elixir of Vitality",
+        "description": "Restores health and increases vitality.",
+        "ingredients": [
+            {
+                "name": "Dragon Blood",
+                "quantity": "3 drops"
+            },
+            {
+                "name": "Phoenix Feather",
+                "quantity": "1 feather"
+            },
+            {
+                "name": "Ginseng Root",
+                "quantity": "2 roots"
+            }
+        ],
+        "instructions": "Mix the Dragon Blood with the Ginseng Root in a cauldron. Heat until the mixture turns crimson. Add the Phoenix Feather and stir for 5 minutes. Let it cool before consuming."
+    },
+    {
+        "name": "Potion of Invisibility",
+        "description": "Grants temporary invisibility to the user.",
+        "ingredients": [
+            {
+                "name": "Shadow Moss",
+                "quantity": "50 grams"
+            },
+            {
+                "name": "Ethereal Essence",
+                "quantity": "10 ml"
+            },
+            {
+                "name": "Moonstone Dust",
+                "quantity": "1 pinch"
+            }
+        ],
+        "instructions": "Grind the Shadow Moss into a fine powder. Mix with Ethereal Essence in a vial. Sprinkle the Moonstone Dust and shake well. Drink under the light of a full moon for best results."
+    },
+    {
+        "name": "Berserker's Brew",
+        "description": "Increases strength and rage in combat.",
+        "ingredients": [
+            {
+                "name": "Ogre Blood",
+                "quantity": "5 ml"
+            },
+            {
+                "name": "Wolf's Bane",
+                "quantity": "3 leaves"
+            },
+            {
+                "name": "Fire Salamander Tail",
+                "quantity": "1 tail"
+            }
+        ],
+        "instructions": "Boil the Ogre Blood and add the Wolf's Bane leaves. Cut the Fire Salamander Tail into small pieces and add to the mixture. Let it simmer for 10 minutes. Drink before battle."
+    },
+    {
+        "name": "Potion of Eternal Youth",
+        "description": "Slows aging and promotes youthful appearance.",
+        "ingredients": [
+            {
+                "name": "Unicorn Horn Shavings",
+                "quantity": "1 gram"
+            },
+            {
+                "name": "Mermaid Tears",
+                "quantity": "5 drops"
+            },
+            {
+                "name": "Golden Apple",
+                "quantity": "1 slice"
+            }
+        ],
+        "instructions": "Combine the Unicorn Horn Shavings and Mermaid Tears in a crystal bowl. Add the Golden Apple slice and let it soak overnight. Drink the potion at dawn for best results."
+    },
+    {
+        "name": "Potion of Fire Resistance",
+        "description": "Provides resistance to fire and heat.",
+        "ingredients": [
+            {
+                "name": "Fire Lizard Scale",
+                "quantity": "2 scales"
+            },
+            {
+                "name": "Molten Lava",
+                "quantity": "1 teaspoon"
+            },
+            {
+                "name": "Ice Berry Juice",
+                "quantity": "10 ml"
+            }
+        ],
+        "instructions": "Crush the Fire Lizard Scales and mix with Molten Lava. Slowly add Ice Berry Juice while stirring. Let the potion cool completely before using. Apply to skin for fire resistance."
+    },
+    {
+        "name": "Potion of Night Vision",
+        "description": "Enhances vision in darkness.",
+        "ingredients": [
+            {
+                "name": "Bat Wings",
+                "quantity": "2 wings"
+            },
+            {
+                "name": "Glowworm Extract",
+                "quantity": "5 ml"
+            },
+            {
+                "name": "Cat's Eye Gem",
+                "quantity": "1 gem"
+            }
+        ],
+        "instructions": "Blend the Bat Wings into a paste. Mix with Glowworm Extract and add the Cat's Eye Gem. Let the mixture sit under a starry sky for 3 hours. Drink to gain night vision."
+    }
+]
