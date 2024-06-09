@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "localhost:9000",
   "basePath": "/",
   "schemes": [
     "http"
@@ -21,7 +21,7 @@
         }
       }
     },
-    "/potions/": {
+    "/potions": {
       "get": {
         "description": "",
         "produces": [
@@ -204,6 +204,34 @@
               "properties": {
                 "name": {
                   "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "ingredients": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "any"
+                      },
+                      "quantity": {
+                        "type": "string",
+                        "example": "any"
+                      }
+                    }
+                  },
+                  "example": [
+                    {
+                      "name": "any",
+                      "quantity": "any"
+                    }
+                  ]
+                },
+                "instructions": {
+                  "example": "any"
                 }
               }
             }
@@ -264,6 +292,38 @@
               "type": "object",
               "properties": {
                 "name": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "ingredients": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "any"
+                      },
+                      "quantity": {
+                        "type": "string",
+                        "example": "any"
+                      }
+                    }
+                  },
+                  "example": [
+                    {
+                      "name": "any",
+                      "quantity": "any"
+                    },
+                    {
+                      "name": "any",
+                      "quantity": "any"
+                    }
+                  ]
+                },
+                "instructions": {
                   "example": "any"
                 }
               }
