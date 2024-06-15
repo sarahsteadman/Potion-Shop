@@ -10,7 +10,7 @@ const githubAuthSuccess = (req, res) => {
 
 const getProfile = (req, res) => {
     if (!req.isAuthenticated()) {
-        return res.status(401).send('Not authenticated');
+        return res.status(401).send('You are not logged in.');
     }
     res.json(req.user); // Return user profile information
 };
@@ -18,7 +18,7 @@ const getProfile = (req, res) => {
 const logout = (req, res) => {
     req.logout((err) => {
         if (err) { return next(err); }
-        res.redirect('/loggedOut');
+        res.redirect('/account/loggedOut');
     });
 };
 
