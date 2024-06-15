@@ -5,7 +5,7 @@ const githubAuth = passport.authenticate('github', { scope: ['read:user', 'user:
 const githubAuthCallback = passport.authenticate('github', { failureRedirect: '/' });
 
 const githubAuthSuccess = (req, res) => {
-    res.redirect('/profile');
+    res.redirect('/account/profile');
 };
 
 const getProfile = (req, res) => {
