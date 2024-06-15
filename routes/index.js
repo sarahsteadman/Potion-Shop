@@ -9,7 +9,7 @@ const loginRoutes = require('./login');
 
 router.use('/potions', potionsRoutes);
 router.use('/recipes', recipesRoutes);
-router.use('/login', loginRoutes);
+router.use('/account', loginRoutes);
 
 router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
