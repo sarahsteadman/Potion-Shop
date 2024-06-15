@@ -5,7 +5,7 @@ require('dotenv').config();
 passport.use(new GitHubStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: 'https://potion-shop-u0ml.onrender.com/api-docs'
+    callbackURL: 'https://potion-shop-u0ml.onrender.com/account/profile'
 },
     function (accessToken, refreshToken, profile, cb) {
         console.log('GitHub profile:', profile);
