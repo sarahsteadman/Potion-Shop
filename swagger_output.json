@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "https://potion-shop-u0ml.onrender.com/",
+  "host": "https://potion-shop-u0ml.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
