@@ -51,9 +51,9 @@ const create = async (req, res, next) => {
     try {
         const recipe = {
             name: req.body.name,
-            description: req.body.name,
-            ingredients: req.body.name,
-            instructions: req.body.name
+            description: req.body.description,
+            ingredients: req.body.ingredients,
+            instructions: req.body.instructions
         };
         const response = await mongodb.getDb().db(dbName).collection('Recipes').insertOne(recipe);
 
@@ -79,9 +79,9 @@ const update = async (req, res, next) => {
     try {
         const recipe = {
             name: req.body.name,
-            description: req.body.name,
-            ingredients: req.body.name,
-            instructions: req.body.name
+            description: req.body.description,
+            ingredients: req.body.ingredients,
+            instructions: req.body.instructions
         };
 
         const idString = String(req.params.id);
