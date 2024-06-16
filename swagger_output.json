@@ -5,10 +5,10 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:9000",
+  "host": "https://potion-shop-u0ml.onrender.com/",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
